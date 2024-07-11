@@ -13,7 +13,7 @@
     },
     {
       "name": "Pugdag Developers",
-      "email": "lemois1337@protonmail.com"
+      "email": "antovales105@gmail.com"
     }
   ],
   "browser": {
@@ -43,7 +43,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pugdag/node-pugdag-core-lib"
+    "url": "https://github.com/Pugdag/node-core-lib"
   },
   "scripts": {
     "xbuild": "gulp",
