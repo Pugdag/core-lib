@@ -1,0 +1,63 @@
+{
+  "name": "@pugdag/core-lib",
+  "version": "1.6.6",
+  "main": "index.js",
+  "authors": [
+    {
+      "name": "BitPay",
+      "email": "dev@bitpay.com"
+    },
+    {
+      "name": "ASPECTRON Inc",
+      "email": "info@aspectron.com"
+    },
+    {
+      "name": "Pugdag Developers",
+      "email": "lemois1337@protonmail.com"
+    }
+  ],
+  "browser": {
+    "request": "browser-request"
+  },
+  "dependencies": {
+    "blake2b-wasm": "^2.1.0",
+    "secp256k1-wasm": ">=2.0.0",
+    "bn.js": "=4.11.8",
+    "bs58": "^4.0.1",
+    "buffer-compare": "=1.1.1",
+    "elliptic": "^6.5.3",
+    "inherits": "=2.0.1",
+    "lodash": "^4.17.20",
+    "url": "*"
+  },
+  "description": "JavaScript Pugdag library.",
+  "___devDependencies": {
+    "base-x": "=3.0.4",
+    "bitcore-build": "^8.23.1",
+    "brfs": "^2.0.1",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.0",
+    "sinon": "^7.1.1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pugdag/node-pugdag-core-lib"
+  },
+  "scripts": {
+    "xbuild": "gulp",
+    "xcoverage": "gulp coverage",
+    "xpub": "npm run build && npm publish",
+    "xtest": "gulp test",
+    "xtest:ci": "npm run test",
+    "prepublishOnly": "rm -rf ./dist && rm -f package-lock.json && npm install --also=dev"
+  },
+  "files": [
+    "lib",
+    "index.d.ts",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ]
+}
